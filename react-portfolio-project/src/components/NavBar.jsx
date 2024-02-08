@@ -5,14 +5,14 @@ const NavBar = () => {
     <nav>
       <div>
         <div>
-          <a href="/" className="text-2xl font-bold flex space-x-3">
+          <a href="/" className="">
             {" "}
             KALIMASHE{" "}
           </a>
         </div>
 
         {/* Buttons container */}
-        <div className="fixed top-1/2 right-4 transform -translate-y-1/2 flex flex-col items-end">
+        <div className="menubar">
           {/* Add more buttons as needed */}
           <button>Meet Likhaya</button>
           <button>Talent Bank</button>
