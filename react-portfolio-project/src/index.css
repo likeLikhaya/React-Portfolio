@@ -1,14 +1,17 @@
-* {
+body {
   background: linear-gradient(
     180deg,
     rgba(183, 166, 246, 1) 0%,
     rgba(240, 161, 214, 1) 100%
   );
+  display: flex;
+  font-family: montserrat;
 }
 
 .menubar {
+  border-radius: 25px;
   width: 287px;
-  height: 564px;
+  height: 155px;
   display: flex;
   flex-direction: column;
   position: absolute;
