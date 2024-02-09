@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import Projects from "./Projects";
 import { Projects } from "./Projects";
 
-const ProjectsDesign = () => {
+const Slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const creations = [];
+  const creations = [title, description, image, icon];
   return (
     <div className="slider">
       <div className="creations">
         <div
           className="layout"
-          style={{ transform: "translate: (-${activeIndex * 100})" }}
+          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
         >
           {" "}
           {creations.map((creations) => {
@@ -22,4 +22,4 @@ const ProjectsDesign = () => {
   );
 };
 
-export default ProjectsDesign;
+export default Slider;
