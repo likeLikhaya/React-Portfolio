@@ -9,17 +9,6 @@ body {
 }
 
 .menubar {
-  border-radius: 25px;
-  width: 287px;
-  height: 155px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  align-items: center;
-  justify-content: space-between;
 }
 
 .menubar a {
