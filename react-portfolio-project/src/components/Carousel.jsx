@@ -1,8 +1,8 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { CarouselItem } from "./CarouselItem";
 
-const Projects = () => {
-  const creations = [
+const Carousel = () => {
+  const items = [
     {
       title: "Kuyasa Health Center Website",
       description:
@@ -30,28 +30,14 @@ const Projects = () => {
   ];
 
   return (
-    <div className="slider">
-      <div className="creations">
-        <div
-          className="layout"
-          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-        >
-          {creations.map((creations, index) => (
-            <div key={index}>
-              <h2>{creations.title}</h2>
-              <p>{creations.description}</p>
-              <img src={creations.image} alt={creations.title} />
-              {Array.isArray(creations.icon) ? (
-                creations.icon.map((icon, i) => <span key={i}>{icon}</span>)
-              ) : (
-                <span>{creations.icon}</span>
-              )}
-            </div>
-          ))}
-        </div>
+    <div className="carousel">
+      <div className="inner">
+        {items.map((item, index) => (
+          <CarouselItem key={index} item={item} />
+        ))}
       </div>
     </div>
   );
 };
 
-export default Projects;
+export default Carousel;
