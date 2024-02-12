@@ -5,7 +5,7 @@ const Welcome = () => {
     <section>
       <header>
         <div className="nav-bar">
-          <a href="#" className="logo">
+          <a href="" className="logo">
             Kalimashe
           </a>
           <div className="navigation">
