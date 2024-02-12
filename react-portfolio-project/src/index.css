@@ -1,3 +1,36 @@
+/*      welcome section         */
+
+.hello-there-text {
+  color: rgba(0, 0, 0, 1);
+  width: 417px;
+  height: auto;
+  font-size: 64px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Monda;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.welcomeIntro {
+  top: 280px;
+  left: 101px;
+  color: rgba(0, 0, 0, 1);
+  width: 805px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Monda;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
 .group1-container {
   width: 100%;
   display: flex;
@@ -25,38 +58,30 @@
   margin-bottom: 20px; /* Add margin between buttons */
 }
 
-.group1-text,
-.group1-text2,
-.group1-text4,
-.group1-text6 {
-  /* Shared styles for text */
-  color: rgba(0, 0, 0, 1);
-  width: 160px;
-  height: auto;
-  position: absolute;
-  font-size: 20px;
-  font-style: Regular;
-  text-align: center;
-  font-family: Monda;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
+/*          navigation bar         */
+.navigation {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  width: 100%;
 }
 
-.group1-text {
-  top: 22px;
-  left: 64px;
+.nav-items {
+  display: flex;
+  align-items: center;
 }
-.group1-text2 {
-  top: 191px;
-  left: 64px;
+
+.nav-close-btn {
+  /* Add styles for the close button if needed */
 }
-.group1-text4 {
-  top: 352px;
-  left: 64px;
+
+.nav-items a {
+  margin-left: 10px; /* Add spacing between nav items */
+  text-decoration: none;
+  color: black; /* Change color as needed */
 }
-.group1-text6 {
-  top: 510px;
-  left: 64px;
+
+.nav-items a.active {
+  font-weight: bold; /* Style active link */
 }
+
+/*          about section         */
