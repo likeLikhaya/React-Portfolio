@@ -1,16 +1,62 @@
-body {
-  background: linear-gradient(
-    180deg,
-    rgba(183, 166, 246, 1) 0%,
-    rgba(240, 161, 214, 1) 100%
-  );
+.group1-container {
+  width: 100%;
   display: flex;
-  font-family: montserrat;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
 }
 
-/* .menubar {
-} */
+.group1-group1 {
+  width: 287px;
+  height: auto; /* Changed height to auto */
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+  left: 450px;
+}
 
-.menubar a {
-  margin-bottom: 10px; /* Adjust the value to your desired spacing */
+.group1-btn {
+  width: 287px;
+  height: 77px;
+  border-radius: 25px;
+  background-color: #eee; /* Example background color */
+  margin-bottom: 20px; /* Add margin between buttons */
+}
+
+.group1-text,
+.group1-text2,
+.group1-text4,
+.group1-text6 {
+  /* Shared styles for text */
+  color: rgba(0, 0, 0, 1);
+  width: 160px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Monda;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.group1-text {
+  top: 22px;
+  left: 64px;
+}
+.group1-text2 {
+  top: 191px;
+  left: 64px;
+}
+.group1-text4 {
+  top: 352px;
+  left: 64px;
+}
+.group1-text6 {
+  top: 510px;
+  left: 64px;
 }

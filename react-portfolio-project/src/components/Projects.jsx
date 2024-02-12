@@ -36,15 +36,15 @@ const Projects = () => {
           className="layout"
           style={{ transform: `translateX(-${activeIndex * 100}%)` }}
         >
-          {creations.map((creation, index) => (
+          {creations.map((creations, index) => (
             <div key={index}>
-              <h2>{creation.title}</h2>
-              <p>{creation.description}</p>
-              <img src={creation.image} alt={creation.title} />
-              {Array.isArray(creation.icon) ? (
-                creation.icon.map((icon, i) => <span key={i}>{icon}</span>)
+              <h2>{creations.title}</h2>
+              <p>{creations.description}</p>
+              <img src={creations.image} alt={creations.title} />
+              {Array.isArray(creations.icon) ? (
+                creations.icon.map((icon, i) => <span key={i}>{icon}</span>)
               ) : (
-                <span>{creation.icon}</span>
+                <span>{creations.icon}</span>
               )}
             </div>
           ))}

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Projects from "./Projects";
-import { Projects } from "./Projects";
+import { creations } from "./Projects";
 
 const Slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const creations = [title, description, image, icon];
+  const creations = [];
   return (
     <div className="slider">
       <div className="creations">
