@@ -2,7 +2,8 @@ import "./App.css";
 // import Skills from "./components/Skills";
 // import About from "./components/About";
 //import Welcome from "./components/Welcome";
-import { Carousel } from "./components/Carousel";
+import Carousel from "./components/Carousel";
+import CarouselItem from "./components/CarouselItem";
 import "./index.css";
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       {/* <Welcome />
        <About />
       <Skills />  */}
-      <Carousel />
+      <CarouselItem />
     </>
   );
 }
