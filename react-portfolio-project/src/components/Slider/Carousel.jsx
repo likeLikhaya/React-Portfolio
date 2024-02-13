@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import CarouselItem from "./CarouselItem";
+import CarouselItem from "../CarouselItem";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
