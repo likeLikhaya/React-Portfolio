@@ -31,6 +31,16 @@ const Slider = () => {
           </div>
         </div>
       </div>
+      <div id="controls">
+        <label htmlFor="slide1"></label>
+        <label htmlFor="slide2"></label>
+        <label htmlFor="slide3"></label>
+      </div>
+      <div id="bullets">
+        <label htmlFor="slide1"></label>
+        <label htmlFor="slide2"></label>
+        <label htmlFor="slide3"></label>
+      </div>
     </div>
   );
 };

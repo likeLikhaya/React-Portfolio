@@ -98,3 +98,26 @@
   margin: 0 -50px 0 0;
   display: block;
 }
+
+#slide2:checked ~ #controls label:nth-last-child(2),
+#slide3:checked ~ #controls label:nth-last-child(3),
+#slide1:checked ~ #controls label:nth-last-child(1) {
+  background: url(https://img.icons8.com/ios/50/back--v1.png) no-repeat;
+  float: left;
+  margin: 0 0 0 -50px;
+  display: block;
+}
+
+#bullets {
+  margin: 100px 0 0;
+  text-align: center;
+}
+
+#bullets label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background: #ccc;
+  margin: 0 10px;
+}
