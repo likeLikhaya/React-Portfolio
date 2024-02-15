@@ -1,18 +1,19 @@
 import "./App.css";
 // import Skills from "./components/Skills";
 // import About from "./components/About";
-import Welcome from "./components/Welcome/Welcome";
-//import Carousel from "./components/Carousel";
-//import CarouselItem from "./components/CarouselItem";
+//import Welcome from "./components/Welcome/Welcome";
+import Slider from "./components/Slider/Slider";
+
 import "./index.css";
 
 function App() {
   return (
     <>
-      <Welcome />
-      {/* <About />
+      {/* <Welcome />
+      <About />
       <Skills />  
-      <CarouselItem /> */}
+        */}
+      <Slider />
     </>
   );
 }
