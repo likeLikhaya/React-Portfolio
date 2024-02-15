@@ -49,7 +49,9 @@
 #slides .slide {
   width: 25%;
   float: left;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   color: #fff;
 }
@@ -126,4 +128,18 @@
 #slide2:checked ~ #bullets label:nth-child(2),
 #slide3:checked ~ #bullets label:nth-child(3) {
   background: #444;
+}
+
+@media screen and (max-width: 900px) {
+  #slide1:checked ~ #bullets label:nth-child(1),
+  #slide2:checked ~ #bullets label:nth-child(2),
+  #slide3:checked ~ #bullets label:nth-child(3) {
+    margin: 0%;
+  }
+
+  #slide1:checked ~ #controls label:nth-last-child(1),
+  #slide2:checked ~ #controls label:nth-last-child(2),
+  #slide3:checked ~ #controls label:nth-last-child(3) {
+    margin: 0%;
+  }
 }
