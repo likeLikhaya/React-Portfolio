@@ -2,31 +2,61 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <footer>
-        <div className="footer-container">
-          <div className="info-group">
-            <h2> Kalimashe</h2>
+    <div className="footer">
+      <div className="sb_footer section_padding">
+        <div className="sb_footer-links">
+          <div className="sb_footer links div">
+            <h4>For Business</h4>
+            <a href="/employer">
+              <p>Link</p>
+            </a>
+            <a href="/employer">
+              <p>Link</p>
+            </a>
+            <a href="/employer">
+              <p>Link</p>
+            </a>
           </div>
-          <ul>
-            <li>
-              <a href="#Welcome">Welcome</a>
-            </li>
-            <li>
-              <a href="#About">Meet Likhaya </a>
-            </li>
-            <li>
-              <a href="#Skills">Talent Bank</a>
-            </li>
-            <li>
-              <a href="#Carousel">Creations</a>
-            </li>
-            <li>
-              <a href="#Contact">Let's get in touch</a>
-            </li>
-          </ul>
+          <div className="sb_footer links div">
+            <h4>For Business</h4>
+            <a href="/employer">
+              <p>Link</p>
+            </a>
+            <a href="/employer">
+              <p>Link</p>
+            </a>
+            <a href="/employer">
+              <p>Link</p>
+            </a>
+          </div>
+          <div className="sb_footer links div">
+            <h4>For Business</h4>
+            <a href="/employer">
+              <p>Link</p>
+            </a>
+            <a href="/employer">
+              <p>Link</p>
+            </a>
+            <a href="/employer">
+              <p>Link</p>
+            </a>
+            <a href="/employer">
+              <p>Link</p>
+            </a>
+          </div>
+          <div className="sb_footer links div">
+            <h4>For Business</h4>
+            <div className="socialmedia">
+              <p>
+                <img src="https://icons8.com/icon/16318/github" alt="" />
+              </p>
+              <p>
+                <img src={github} alt="" />
+              </p>
+            </div>
+          </div>
         </div>
-      </footer>
+      </div>
     </div>
   );
 };
