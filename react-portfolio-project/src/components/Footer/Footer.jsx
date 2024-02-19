@@ -1,6 +1,5 @@
 import React from "react";
-
-const githubIcon = "https://example.com/path/to/github.svg";
+//import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -49,13 +48,40 @@ const Footer = () => {
           <div className="sb_footer links div">
             <h4>For Business</h4>
             <div className="socialmedia">
-              <p>
-                <img src="https://icons8.com/icon/16318/github" alt="" />
-              </p>
-              <p>
-                <img src={github} alt="" />
-              </p>
+              <p>{/*add github icon*/}</p>
+              <p>{/*add linkedin icon*/}</p>
             </div>
+          </div>
+        </div>
+        <br></br>
+        <div className="sb_footer-below">
+          <div className="sb_footer-copyright">
+            <p>
+              @{new Date().getFullYear()} Likhaya Kalimashe. All rights
+              reserved.
+            </p>
+          </div>
+          <div className="sb_footer-below-links">
+            <a href="/terms">
+              <div>
+                <p>Terms & Conditions</p>
+              </div>
+            </a>
+            <a href="/terms">
+              <div>
+                <p>Privacy</p>
+              </div>
+            </a>
+            <a href="/terms">
+              <div>
+                <p>Security</p>
+              </div>
+            </a>
+            <a href="/terms">
+              <div>
+                <p>Cookie Declaration</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>

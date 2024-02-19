@@ -10,12 +10,12 @@ import "./index.css";
 function App() {
   return (
     <>
+      <Footer />
       {/* <Welcome />
       <About />
       <Skills />  
       <Slider />
         */}
-      <Footer />
     </>
   );
 }
