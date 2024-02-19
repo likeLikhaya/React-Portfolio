@@ -1,5 +1,7 @@
 import React from "react";
 
+const githubIcon = "https://example.com/path/to/github.svg";
+
 const Footer = () => {
   return (
     <div className="footer">
