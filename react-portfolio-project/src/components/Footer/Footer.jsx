@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer">
       <div className="sb_footer section_padding">
         <div className="sb_footer-links">
-          <div className="sb_footer links div">
+          <div className="sb_footer-links_div ">
             <h4>For Business</h4>
             <a href="/employer">
               <p>Link</p>
@@ -18,7 +18,7 @@ const Footer = () => {
               <p>Link</p>
             </a>
           </div>
-          <div className="sb_footer links div">
+          <div className="sb_footer-links_div ">
             <h4>For Business</h4>
             <a href="/employer">
               <p>Link</p>
@@ -30,7 +30,7 @@ const Footer = () => {
               <p>Link</p>
             </a>
           </div>
-          <div className="sb_footer links div">
+          <div className="sb_footer-links_div ">
             <h4>For Business</h4>
             <a href="/employer">
               <p>Link</p>
@@ -45,11 +45,15 @@ const Footer = () => {
               <p>Link</p>
             </a>
           </div>
-          <div className="sb_footer links div">
+          <div className="sb_footer-links_div ">
             <h4>For Business</h4>
             <div className="socialmedia">
-              <p>{/*add github icon*/}</p>
-              <p>{/*add linkedin icon*/}</p>
+              <p>
+                <img src={githubIcon} alt="GitHub" />
+              </p>
+              <p>
+                <img src={linkedinIcon} alt="LinkedIn" />
+              </p>
             </div>
           </div>
         </div>
