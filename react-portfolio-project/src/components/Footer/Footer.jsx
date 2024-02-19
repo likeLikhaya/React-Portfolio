@@ -49,10 +49,10 @@ const Footer = () => {
             <h4>For Business</h4>
             <div className="socialmedia">
               <p>
-                <img src={githubIcon} alt="GitHub" />
+                <img src={github} alt="GitHub" />
               </p>
               <p>
-                <img src={linkedinIcon} alt="LinkedIn" />
+                <img src={linkedin} alt="LinkedIn" />
               </p>
             </div>
           </div>
