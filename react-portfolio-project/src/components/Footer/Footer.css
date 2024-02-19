@@ -99,4 +99,23 @@ hr {
   .sb_footer-links div {
     margin: 1rem 0;
   }
+
+  .sb_footer-btn p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .sb_footer-below {
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .sb_footer-below-links {
+    flex-direction: column;
+  }
+
+  .sb_footer-below-links p {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
 }
