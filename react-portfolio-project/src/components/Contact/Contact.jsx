@@ -1,4 +1,5 @@
 import React from "react";
+import "./Contact.css"
 
 const Contact = () => {
   return <div className="contact-container">
@@ -12,9 +13,10 @@ const Contact = () => {
       <input type="text" name="surname" placeholder="Surname" className="contact-inputs" required/>
       <input type="email" name="email" placeholder="Email" className="contact-inputs" required/>
       <textarea name="message" placeholder="Subject" className="contact-inputs" required></textarea>
-      <button type="submit"> Submit <img src="assets/icons8-forward-50.png"></img></button>
+      <button type="submit"> Send! </button>
     </form>
     <div className="contact-right">
+
 
     </div>
   </div>;
