@@ -7,11 +7,11 @@ const Footer = () => {
   <div className="footer-container">
     <div className="about group">
       <h2>Kalimashe.</h2>
-      <p>Junior Sofware Developer</p>
+      
     </div>
     <div className="hr"></div>
     <div className="info group">
-      <h3>More</h3>
+      
       <ul>
         <li><a href="#Welcome">Welcome</a></li>
         <li><a href="#About">Meet Likhaya</a></li>
@@ -21,10 +21,10 @@ const Footer = () => {
     </div>
     <div className="hr"></div>
     <div className="follow group">
-      <h3>Check Out</h3>
+      
       <ul>
-        <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
-        <li><a href="#" ><img src="src/images/github.png"></img></a></li>
+      <li><a href="https://www.linkedin.com/in/likhaya-kalimashe-b86b69200/" target="_blank"><img src="src/images/linkedin.png" alt="LinkedIn"></img></a></li>
+  <li><a href="https://github.com/likeLikhaya" target="_blank"><img src="src/images/github.png" alt="GitHub"></img></a></li>
       </ul>
     </div>
   </div>

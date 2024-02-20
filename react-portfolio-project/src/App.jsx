@@ -4,21 +4,21 @@ import "./App.css";
 // import Welcome from "./components/Welcome/Welcome";
 // import Slider from "./components/Slider/Slider";
 import Footer from "./components/Footer/Footer";
-// import Contact from "./components/Contact/Contact";
+ import Contact from "./components/Contact/Contact";
 
 import "./index.css";
 
 function App() {
   return (
     <>
-    
+    <Contact />
     <Footer />
       {/* 
       <Welcome />
       <About />
       <Skills />
       <Slider />
-      <Contact />
+      
       
         */}
     </>
