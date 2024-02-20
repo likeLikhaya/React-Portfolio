@@ -4,6 +4,16 @@
   align-items: center;
 }
 
+.skills-page img {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+}
+
+hr {
+  border-left: 1px solid #080808; /* Adjust color and thickness as needed */
+  height: 100%; /* Adjust height as needed */
+}
+
 .frontend-skills,
 .backend-skills {
   flex: 1;
