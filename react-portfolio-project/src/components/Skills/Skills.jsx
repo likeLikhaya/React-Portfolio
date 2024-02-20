@@ -5,7 +5,10 @@ import "./Skills.css";
 
 const Skills = () => {
   return (
-    <div>
+    <div className="inner">
+     <div className="header"> 
+     <h1>My Skills</h1>
+     </div>
   <div className="skill-box">
     <div className="skills-title">
       <div className="img">
