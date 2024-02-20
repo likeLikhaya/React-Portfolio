@@ -3,7 +3,10 @@ import React from "react";
 const About = () => {
   return (
     <section>
-      <div style={{ maxWidth: "600px", margin: "0 auto" }}>
+      <div className="content-section" style={{ maxWidth: "600px", margin: "0 auto" }}>
+        <div className="about-img">
+          <img src=""/>
+        </div>
         <p>
           I am a skilled coder who creates innovative products using
           caffeine-powered code spells. During the day, I work in the tech
@@ -23,6 +26,7 @@ const About = () => {
           Throughout all of this, my friends and family keep me grounded. They
           support me and keep me sane in the ever-changing world of tech.
         </p>
+        <a href="cv/CV of Likhaya Kalimashe.pdf" download="Likhaya Kalimashe's CV.pdf"class="btn">Download CV <i class="fas fa-download"></i></a>
       </div>
     </section>
   );
