@@ -3,89 +3,36 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="sb_footer section_padding">
-        <div className="sb_footer-links">
-          <div className="sb_footer-links_div">
-            <h4>For Business</h4>
-            <a href="/employer">
-              <p>Link</p>
-            </a>
-            <a href="/employer">
-              <p>Link</p>
-            </a>
-            <a href="/employer">
-              <p>Link</p>
-            </a>
-          </div>
-          <div className="sb_footer-links_div">
-            <h4>For Business</h4>
-            <a href="/employer">
-              <p>Link</p>
-            </a>
-            <a href="/employer">
-              <p>Link</p>
-            </a>
-            <a href="/employer">
-              <p>Link</p>
-            </a>
-          </div>
-          <div className="sb_footer-links_div">
-            <h4>For Business</h4>
-            <a href="/employer">
-              <p>Link</p>
-            </a>
-            <a href="/employer">
-              <p>Link</p>
-            </a>
-            <a href="/employer">
-              <p>Link</p>
-            </a>
-            <a href="/employer">
-              <p>Link</p>
-            </a>
-          </div>
-          <div className="sb_footer-links_div">
-            <h4>For Business</h4>
-            <div className="socialmedia">
-              <p></p>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <hr/>
-        <div className="sb_footer-below">
-          <div className="sb_footer-copyright">
-            <p>
-              @{new Date().getFullYear()} Likhaya Kalimashe. All rights
-              reserved.
-            </p>
-          </div>
-          <div className="sb_footer-below-links">
-            <a href="/terms">
-              <div>
-                <p>Terms & Conditions</p>
-              </div>
-            </a>
-            <a href="/terms">
-              <div>
-                <p>Privacy</p>
-              </div>
-            </a>
-            <a href="/terms">
-              <div>
-                <p>Security</p>
-              </div>
-            </a>
-            <a href="/terms">
-              <div>
-                <p>Cookie Declaration</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+    <footer>
+  <div className="footer-container">
+    <div className="about group">
+      <h2>Kalimashe.</h2>
+      <p>Junior Sofware Developer</p>
     </div>
+    <div className="hr"></div>
+    <div className="info group">
+      <h3>More</h3>
+      <ul>
+        <li><a href="#Welcome">Welcome</a></li>
+        <li><a href="#About">Meet Likhaya</a></li>
+        <li><a href="#Skills">Talent Bank</a></li>
+        <li><a href="#Slider">Creations</a></li>
+      </ul>
+    </div>
+    <div className="hr"></div>
+    <div className="follow group">
+      <h3>Check Out</h3>
+      <ul>
+        <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
+        <li><a href="#" ><img src="src/images/github.png"></img></a></li>
+      </ul>
+    </div>
+  </div>
+  <div className="footer-copyright group">
+    <p>© 2024 by Likhaya Kalimashe. All rights reserved.</p>
+  </div>
+</footer>
+
   );
 };
 
