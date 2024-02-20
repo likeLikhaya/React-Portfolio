@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Skills.css";
 
 const Skills = () => {
@@ -16,6 +17,9 @@ const Skills = () => {
             </li>
             <li>
               <i className="fab fa-js"></i> JavaScript
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faReact} />
             </li>
             {/* Add more frontend skills as needed */}
           </ul>
