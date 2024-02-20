@@ -1,5 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import "./Skills.css";
 
 const Skills = () => {
@@ -10,16 +10,17 @@ const Skills = () => {
           <h2>Frontend Skills</h2>
           <ul>
             <li>
-              <i className="fab fa-html5"></i> HTML5
+              <img src="src/images/html-icon.svg" alt="HTML5 Icon" />
+              HTML5
             </li>
             <li>
-              <i className="fab fa-css3-alt"></i> CSS3
+              <img src="src/images/css-icon.svg" /> CSS3
             </li>
             <li>
-              <i className="fab fa-js"></i> JavaScript
+              <img src="src/images/js-icon.svg" /> JavaScript
             </li>
             <li>
-              <FontAwesomeIcon icon={faReact} />
+              <img src="src/images/icons8-react.svg" /> React
             </li>
             {/* Add more frontend skills as needed */}
           </ul>
@@ -28,10 +29,10 @@ const Skills = () => {
           <h2>Backend Skills</h2>
           <ul>
             <li>
-              <i className="fas fa-database"></i> Database Management
+              <img src="src/images/icons8-react.svg" /> Database Management
             </li>
             <li>
-              <i className="fab fa-node-js"></i> Node.js
+              <img src="src/images/icons8-react.svg" /> Node.js
             </li>
             {/* Add more backend skills as needed */}
           </ul>
