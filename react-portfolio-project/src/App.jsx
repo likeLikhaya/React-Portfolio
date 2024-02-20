@@ -11,14 +11,13 @@ import "./index.css";
 function App() {
   return (
     <>
-      
       {/* <Welcome />
       <About />
       <Skills />  
       <Slider />
       <Footer />
         */}
-        <Contact />
+      <Contact />
     </>
   );
 }
