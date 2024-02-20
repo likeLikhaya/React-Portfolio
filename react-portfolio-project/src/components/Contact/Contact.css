@@ -1,5 +1,4 @@
 * {
-  background: #f0a1d6;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,13 +6,14 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: #e8a1da;
 }
 
 .contact-container {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .contact-left {
@@ -39,24 +39,46 @@ body {
   margin-bottom: 20px;
 }
 
-.contact-inputs input {
-  width: 400px;
-  height: 50px;
+.input-group {
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+.contact-inputs {
+  max-width: 400px;
+  padding: 1rem;
+  border-radius: 1rem;
   border: none;
-  outline: none;
-  padding-left: 25px;
+  background: #d9d9d9;
   font-weight: 500;
-  color: white;
-  background-color: transparent; /* Set background color to transparent */
-  border-radius: 50px;
 }
 
 .contact-inputs::placeholder {
-  color: white; /* Set placeholder text color to white */
+  color: black;
 }
 
 .contact-left textarea {
-  height: 140px;
+  width: 580px; /* Set width */
+  height: 268px; /* Set height */
   padding-top: 15px;
   border-radius: 20px;
+  background: #d9d9d9;
+}
+
+.contact-inputs:focus {
+  border: 2px solid;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: black;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: #d9d9d9;
+  cursor: pointer;
 }
