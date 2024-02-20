@@ -1,3 +1,27 @@
 * {
-  background-image: linear-gradient(#b7a6f6, #f0a1d6);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #b7a6f6;
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-img {
+  margin-right: 20px;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
