@@ -1,13 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Slider.css";
 
 const Slider = () => {
+  const [selectedSlide, setSelectedSlide] = useState("slide1");
+
+  const handleSlideChange = (event) => {
+    setSelectedSlide(event.target.id);
+  };
+
   return (
     <div id="slider">
-      <input type="radio" name="slider" id="slide1" checked />
-      <input type="radio" name="slider" id="slide2" />
-      <input type="radio" name="slider" id="slide3" />
-      <input type="radio" name="slider" id="slide4" />
+      <input
+        type="radio"
+        name="slider"
+        id="slide1"
+        checked={selectedSlide === "slide1"}
+        onChange={handleSlideChange}
+      />
+      <input
+        type="radio"
+        name="slider"
+        id="slide2"
+        checked={selectedSlide === "slide2"}
+        onChange={handleSlideChange}
+      />
+      <input
+        type="radio"
+        name="slider"
+        id="slide3"
+        checked={selectedSlide === "slide3"}
+        onChange={handleSlideChange}
+      />
       <div id="slides">
         <div id="overflow">
           <div className="inner">
@@ -19,7 +42,7 @@ const Slider = () => {
                     <p>Content for Slide 1</p>
                   </div>
                   <div className="image-content">
-                    <img src="src/images/bug-bank.jpg" alt="Slide 1 Image" />
+                    <img src="src/images/bug-bank.png" alt="Slide 1 Image" />
                   </div>
                 </div>
               </div>
@@ -32,7 +55,7 @@ const Slider = () => {
                     <p>Content for Slide 2</p>
                   </div>
                   <div className="image-content">
-                    <img src="image_url_2" alt="Slide 2 Image" />
+                    <img src="src/images/kuyasa.png" alt="Slide 2 Image" />
                   </div>
                 </div>
               </div>
@@ -45,20 +68,10 @@ const Slider = () => {
                     <p>Content for Slide 3</p>
                   </div>
                   <div className="image-content">
-                    <img src="image_url_3" alt="Slide 3 Image" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="slide slide_4">
-              <div className="slide-content">
-                <div className="content-wrapper">
-                  <div className="text-content">
-                    <h2>Slide 4</h2>
-                    <p>Content for Slide 4</p>
-                  </div>
-                  <div className="image-content">
-                    <img src="image_url_4" alt="Slide 4 Image" />
+                    <img
+                      src="src/images/tax-calculator.png"
+                      alt="Slide 3 Image"
+                    />
                   </div>
                 </div>
               </div>
@@ -70,13 +83,11 @@ const Slider = () => {
         <label htmlFor="slide1"></label>
         <label htmlFor="slide2"></label>
         <label htmlFor="slide3"></label>
-        <label htmlFor="slide4"></label>
       </div>
       <div id="bullets">
         <label htmlFor="slide1"></label>
         <label htmlFor="slide2"></label>
         <label htmlFor="slide3"></label>
-        <label htmlFor="slide4"></label>
       </div>
     </div>
   );

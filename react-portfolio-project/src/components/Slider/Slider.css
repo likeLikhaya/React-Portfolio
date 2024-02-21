@@ -1,4 +1,4 @@
-slider css #slider {
+#slider {
   margin: 0 auto;
   width: 800px;
   max-width: 100%;
@@ -92,19 +92,19 @@ slider css #slider {
   opacity: 1;
 }
 
-#slide1:checked ~ #controls label:nth-child(1),
 #slide2:checked ~ #controls label:nth-child(2),
-#slide3:checked ~ #controls label:nth-child(3) {
-  background: url(https://img.icons8.com/ios/50/forward--v1.png) no-repeat;
+#slide3:checked ~ #controls label:nth-child(3),
+#slide1:checked ~ #controls label:nth-child(1) {
+  background: url(src/images/icons8-forward-50.png) no-repeat;
   float: right;
   margin: 0 -50px 0 0;
   display: block;
 }
 
-#slide1:checked ~ #controls label:nth-last-child(1),
 #slide2:checked ~ #controls label:nth-last-child(2),
-#slide3:checked ~ #controls label:nth-last-child(3) {
-  background: url(https://img.icons8.com/ios/50/back--v1.png) no-repeat;
+#slide3:checked ~ #controls label:nth-last-child(3),
+#slide1:checked ~ #controls label:nth-last-child(1) {
+  background: url(src/images/icons8-back-50.png) no-repeat;
   float: left;
   margin: 0 0 0 -50px;
   display: block;
