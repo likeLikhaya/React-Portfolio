@@ -21,15 +21,12 @@ const Slider = () => {
           <div className="feature-slide">
             <div className="new-feature-image-wrap">
               <div className="feature-slide-image">
-                <img
-                  src="http://www.williamsjettenders.com/wp-content/uploads/2015/10/features41.jpg"
-                  alt="Feature 1"
-                />
+                <img src="src/images/bug-bank.png" alt="Feature 1" />
               </div>
             </div>
             <div className="center-content">
               <div className="overview-text">
-                <h2 className="fakeh1">Cleaner, more powerful engine</h2>
+                <h2 className="fakeh1">Bug Bank</h2>
                 <span className="divider-wave blue-wave"></span>
                 <p>
                   Get improved power, torque and fuel efficiency with the
@@ -47,15 +44,12 @@ const Slider = () => {
           <div className="feature-slide">
             <div className="new-feature-image-wrap">
               <div className="feature-slide-image">
-                <img
-                  src="http://www.williamsjettenders.com/wp-content/uploads/2015/08/325-image3.jpg"
-                  alt="Feature 2"
-                />
+                <img src="src/images/kuyasa.png" alt="Feature 2" />
               </div>
             </div>
             <div className="center-content">
               <div className="overview-text">
-                <h2 className="fakeh1">High Performance</h2>
+                <h2 className="fakeh1">Kuyasa Health Service</h2>
                 <span className="divider-wave blue-wave"></span>
                 <p>
                   Turbojets are known for outperforming almost all comparable
@@ -72,15 +66,12 @@ const Slider = () => {
           <div className="feature-slide">
             <div className="new-feature-image-wrap">
               <div className="feature-slide-image">
-                <img
-                  src="http://www.williamsjettenders.com/wp-content/uploads/2015/08/445-image2.jpg"
-                  alt="Feature 3"
-                />
+                <img src="src/images/tax-calculator.png" alt="Feature 3" />
               </div>
             </div>
             <div className="center-content">
               <div className="overview-text">
-                <h2 className="fakeh1">Supreme Stability &amp; Buoyancy</h2>
+                <h2 className="fakeh1">Tax Calculator</h2>
                 <span className="divider-wave blue-wave"></span>
                 <p>
                   The Turbojet design places the helmsman at the stern of the
