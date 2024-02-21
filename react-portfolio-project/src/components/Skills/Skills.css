@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #333;
+  background-image: linear-gradient(#cfa4e8, #d1a3e7, #d8a3e3);
 }
 
 .inner {
@@ -20,8 +20,12 @@ body {
   position: relative;
 }
 
+h1 {
+  text-align: center;
+}
+
 .header:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -61,16 +65,24 @@ body {
   height: 90px;
   position: relative;
   border-radius: 45px;
-  background-color: #fff;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.skills-title h3{
+.skills-title h3 {
   color: #fff;
 }
 
-.skill-icon{
-  width: 50px
+.skill-icon {
+  width: 50px;
+}
+
+.frontend .img {
+  justify-content: flex-start;
+}
+
+.backend .img {
+  justify-content: flex-end;
 }
