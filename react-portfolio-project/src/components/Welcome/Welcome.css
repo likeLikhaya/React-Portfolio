@@ -1,12 +1,19 @@
-.welcome {
-  width: 1440px;
-  height: 1024px;
-  position: relative;
-  background: #baa6f5;
+.welcome-container {
+  background-color: #f5f5f5;
+  padding: 50px;
 }
 
-body {
-  background-color: #baa6f5; /* Purple color */
-  margin: 0;
-  padding: 0;
+.welcome-title {
+  text-align: center;
+}
+
+.overlap-group {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.welcome {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
 }
