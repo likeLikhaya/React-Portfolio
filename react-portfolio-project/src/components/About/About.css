@@ -1,27 +1,52 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  background: #b7a6f6;
-}
-
-.content-section {
+.desktop {
+  background-color: #ffffff;
   display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
-.about-img {
-  margin-right: 20px;
+.desktop .div {
+  background-color: #ffffff;
+  height: 1024px;
+  position: relative;
+  width: 1440px;
 }
 
-.about-img img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+.desktop .profilepic {
+  height: 490px;
+  left: 98px;
+  object-fit: cover;
+  position: absolute;
+  top: 221px;
+  width: 471px;
+}
+
+.desktop .i-am-a-skilled-coder {
+  color: #000000;
+  font-family: "Monda-Regular", Helvetica;
+  font-size: 22px;
+  font-weight: 400;
+  height: 507px;
+  left: 720px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 303px;
+  width: 667px;
+}
+
+.desktop .text-wrapper {
+  color: #000000;
+  font-family: "Monda-Regular", Helvetica;
+  font-size: 48px;
+  font-weight: 400;
+  height: 116px;
+  left: 429px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 104px;
+  width: 582px;
 }
