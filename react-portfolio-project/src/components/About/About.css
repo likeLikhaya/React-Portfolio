@@ -1,52 +1,43 @@
-.desktop {
-  background-color: #ffffff;
+.about-me-section {
+  margin-bottom: 50px; /* Adjust the value as needed */
+}
+
+.about-me-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap; /* Allows the items to wrap if needed */
 }
 
-.desktop .div {
-  background-color: #ffffff;
-  height: 1024px;
-  position: relative;
-  width: 1440px;
+.about-me-image,
+.about-me-text {
+  flex: 1 1 auto; /* Allows the items to grow and shrink as needed */
+  margin: 10px; /* Adds some space around the image and text */
 }
 
-.desktop .profilepic {
-  height: 490px;
-  left: 98px;
-  object-fit: cover;
-  position: absolute;
-  top: 221px;
-  width: 471px;
+.about-me-image img {
+  width: 50%;
+  height: auto;
 }
 
-.desktop .i-am-a-skilled-coder {
-  color: #000000;
-  font-family: "Monda-Regular", Helvetica;
-  font-size: 22px;
-  font-weight: 400;
-  height: 507px;
-  left: 720px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 303px;
-  width: 667px;
+.about-me-text {
+  width: 50%;
+  padding-left: 20px;
 }
 
-.desktop .text-wrapper {
-  color: #000000;
-  font-family: "Monda-Regular", Helvetica;
-  font-size: 48px;
-  font-weight: 400;
-  height: 116px;
-  left: 429px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 104px;
-  width: 582px;
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .about-me-image img,
+  .about-me-text {
+    width: 100%;
+    margin: 10px 0; /* Adds vertical margin on smaller screens */
+  }
+
+  .about-me-image img {
+    align-items: center;
+  }
 }
