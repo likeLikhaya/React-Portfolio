@@ -1,6 +1,6 @@
 /* My Portfolio Starts */
 
-.section-heading {
+.section--heading {
   font-weight: 600;
   color: black;
   font-size: 40px;
@@ -73,4 +73,43 @@
 }
 .portfolio--section--card:hover path {
   stroke: #006b6a;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .portfolio--section {
+    padding: 50px 20px;
+  }
+
+  .portfolio--container-box {
+    flex-direction: column;
+  }
+
+  .portfolio--section--container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio--section--img {
+    width: 100%;
+  }
+
+  .portfolio--section--card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .portfolio--section--card--content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio--section {
+    padding: 30px 10px;
+  }
+
+  .portfolio--section--card--content {
+    padding: 16px;
+  }
 }

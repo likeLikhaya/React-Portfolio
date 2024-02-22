@@ -1,10 +1,19 @@
-.welcome-container {
-  background-color: #f5f5f5;
-  padding: 50px;
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust based on your design needs */
+  background-image: url("path/to/your/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #050505;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for better readability */
 }
 
-.welcome-title {
+.welcome-container {
+  max-width: 800px;
   text-align: center;
+  padding: 20px;
 }
 
 .overlap-group {
@@ -15,5 +24,25 @@
 .welcome {
   font-size: 18px;
   line-height: 1.5;
-  color: #333;
+  color: #050505; /* Ensures text color is white */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .welcome {
+    font-size: 16px;
+  }
 }

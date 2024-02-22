@@ -79,3 +79,76 @@ footer a {
 .footer ul li {
   margin-bottom: 10px; /* Add some spacing between list items */
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-container .info ul,
+  .footer-container .follow ul {
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the left */
+  }
+}
+
+.footer ul {
+  list-style-type: none; /* Remove the dots */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.footer ul li {
+  margin-bottom: 10px; /* Add some spacing between list items */
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-container .info ul,
+  .footer-container .follow ul {
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the left */
+  }
+}
+
+.footer ul {
+  list-style-type: none; /* Remove the dots */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.footer ul li {
+  margin-bottom: 10px; /* Add some spacing between list items */
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-container .info ul,
+  .footer-container .follow ul {
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the left */
+  }
+}
+
+.footer ul {
+  list-style-type: none; /* Remove the dots */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.footer ul li {
+  margin-bottom: 10px; /* Add some spacing between list items */
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-container .info ul,
+  .footer-container .follow ul {
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the left */
+  }
+}
+
+.footer ul {
+  list-style-type: none; /* Remove the dots */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.footer ul li {
+  margin-bottom: 10px; /* Add some spacing between list items */
+}

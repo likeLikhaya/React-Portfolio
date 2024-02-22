@@ -1,4 +1,5 @@
 import React from "react";
+import reCAPTCHA from "react-google-recaptcha";
 import "./Contact.css";
 
 const Contact = () => {
@@ -49,6 +50,7 @@ const Contact = () => {
           className="contact-inputs"
           required
         ></textarea>
+        <reCAPTCHA />
         <button type="submit"> Send!</button>
       </form>
     </div>

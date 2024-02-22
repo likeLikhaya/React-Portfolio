@@ -4,10 +4,11 @@ import "./Welcome.css";
 const Welcome = () => {
   return (
     <>
-      <section>
+      <section className="landing-page">
         <div className="welcome-container">
           <div className="welcome-title">
             <div className="overlap-group">
+              <h1>Hello There!</h1>
               <p className="welcome">
                 Welcome to my Digital Wonderland! 🚀
                 <br />

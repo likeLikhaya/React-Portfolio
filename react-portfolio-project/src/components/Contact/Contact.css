@@ -6,7 +6,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-image: linear-gradient(#e8a1da, #F0A1D6);
+  background-image: linear-gradient(#e8a1da, #f0a1d6);
 }
 
 .contact-container {
@@ -87,9 +87,19 @@ body {
   height: 15px;
 }
 
-@media screen and (max-width: 320px) {
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .contact-inputs,
-  .contact-left textarea {
-    max-width: 100%; /* Set max-width to 100% */
+  .contact-textarea {
+    width: 50%; /* Keep inputs full width on smaller screens */
+    font-size: 14px; /* Adjust font size if necessary */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-inputs,
+  .contact-textarea {
+    width: 100%; /* Keep inputs full width on the smallest screens */
+    font-size: 12px; /* Further reduce font size for even smaller screens */
   }
 }
