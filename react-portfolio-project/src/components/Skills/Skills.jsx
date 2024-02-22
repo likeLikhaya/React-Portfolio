@@ -3,9 +3,8 @@ import "./Skills.css";
 
 const Skills = () => {
   return (
-    <div>
-      <h1> Talent Bank</h1>
-
+    <section className="Skills">
+      <h1>Talent Bank</h1>
       <div className="container">
         <div className="skill-box">
           <div className="skills-title">
@@ -16,10 +15,8 @@ const Skills = () => {
                 className="skill-icon"
               />
             </div>
-
             <h3>HTML 5</h3>
           </div>
-          <p>add some text here maybe</p>
         </div>
         <div className="skill-box">
           <div className="skills-title">
@@ -32,7 +29,6 @@ const Skills = () => {
             </div>
             <h3>CSS</h3>
           </div>
-          <p>add some text here maybe</p>
         </div>
         <div className="skill-box">
           <div className="skills-title">
@@ -45,7 +41,6 @@ const Skills = () => {
             </div>
             <h3>JavaScript</h3>
           </div>
-          <p>add some text here maybe</p>
         </div>
         <div className="skill-box">
           <div className="skills-title">
@@ -58,7 +53,6 @@ const Skills = () => {
             </div>
             <h3>React</h3>
           </div>
-          <p>add some text here maybe</p>
         </div>
         <div className="skill-box">
           <div className="skills-title">
@@ -71,10 +65,9 @@ const Skills = () => {
             </div>
             <h3>Node.js</h3>
           </div>
-          <p>add some text here maybe</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

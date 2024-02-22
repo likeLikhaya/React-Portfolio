@@ -49,10 +49,7 @@ const Contact = () => {
           className="contact-inputs"
           required
         ></textarea>
-        <button type="submit">
-          {" "}
-          Send! <img src="assets/icons8-forward-50.png"></img>
-        </button>
+        <button type="submit"> Send!</button>
       </form>
     </div>
   );

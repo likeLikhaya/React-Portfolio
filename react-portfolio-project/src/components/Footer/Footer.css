@@ -1,71 +1,81 @@
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #F0A1D6;
+  background: #f0a1d6;
   width: 100%;
   margin-top: 50px;
   padding: 3rem 2rem;
-  color:#fff;
-}
-
-footer a{
   color: #fff;
 }
 
-.footer-container{
+footer a {
+  color: #fff;
+}
+
+.footer-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 1150px;
 }
 
-.footer-container .about h2{
+.footer-container .about h2 {
   font-size: 3em;
   font-weight: 600;
   background: linear-gradient(to top, transparent 0%, #fff 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: .8;
+  opacity: 0.8;
 }
 
-.footer-container .about p{
+.footer-container .about p {
   font-size: 1em;
   font-weight: 300;
   margin-bottom: 30px;
 }
 
 .footer-container .info,
-.footer-container .follow{
+.footer-container .follow {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .footer-container .info h3,
-.footer-container .follow h3{
+.footer-container .follow h3 {
   font-size: 1.1em;
   font-weight: 500;
   margin-bottom: 30px;
 }
 
 .footer-container .info ul,
-.footer-container .follow ul{
+.footer-container .follow ul {
   display: flex;
 }
 
-.footer-container .info a{
+.footer-container .info a {
   margin: 20px;
 }
 
-.footer-container .follow a{
+.footer-container .follow a {
   font-size: 1.5em;
   margin: 20px;
 }
 
-.footer-copyright p{
+.footer-copyright p {
   font-size: 1em;
   font-weight: 300;
   margin-top: 50px;
+}
+
+.footer ul {
+  list-style-type: none; /* Remove the dots */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.footer ul li {
+  margin-bottom: 10px; /* Add some spacing between list items */
 }

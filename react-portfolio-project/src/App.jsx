@@ -1,25 +1,23 @@
+import React from "react";
 import "./App.css";
-//import Skills from "./components/Skills/Skills";
-import About from "./components/About/About";
-//import Welcome from "./components/Welcome/Welcome";
-//import Slider from "./components/Slider/Slider";
-//import Footer from "./components/Footer/Footer";
-//import Contact from "./components/Contact/Contact";
+
+//simport About from "./components/About/About";
+import Welcome from "./components/Welcome/Welcome";
+import Skills from "./components/Skills/Skills";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import Slider from "./components/Slider/Slider";
 
 function App() {
   return (
     <>
-      <About />
-
-      {/* 
       <Welcome />
+
       <Skills />
       <Slider />
       <Contact />
       <Footer />
-      
-      
-        */}
+      {/*  <About />*/}
     </>
   );
 }

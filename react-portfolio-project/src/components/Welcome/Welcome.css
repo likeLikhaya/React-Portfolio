@@ -1,80 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Monda:400|Poppins:600");
-* {
-  background: #b7a6f6;
-  font-family: "Montserrat", sans-serif;
-}
-
-header {
-  z-index: 99999;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  backdrop-filter: blur(20px);
-  transition: 0.6s ease;
-}
-
-header.sticky {
-  background: rgba(255, 255, 255, 0);
-  box-shadow: 0px 0px 20px rgb(0 0 0/10%);
-}
-
-.navbar {
+.welcome {
+  width: 1440px;
+  height: 1024px;
   position: relative;
-  height: calc(4rem + 1rem);
-  max-width: 1250px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 20px;
-  transition: 0.6s ease;
+  background: #baa6f5;
 }
 
-header.sticky .nav-bar {
-  height: calc(2.5rem + 1rem);
-}
-
-.navbar .logo {
-  color: #0e2431;
-  font-size: 1.3em;
-  font-weight: 600;
-}
-
-.navitems a.active {
-  color: #44ae71;
-}
-
-.navitems a {
-  color: #0e2431;
-  font-size: 1em;
-  font-weight: 500;
-}
-
-.navitems a:not(:last-child) {
-  margin-right: 50px;
-}
-
-.navitems a:hover {
-  color: #44ae71;
-}
-
-.navmenubtn {
-  display: none;
-}
-
-.welcomeIntro {
-  color: #000000;
-  font-family: "Monda", Helvetica;
-  font-size: 64px;
-  font-weight: 400;
-  height: 162px;
-  left: 191px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 315px;
-  width: 417px;
+body {
+  background-color: #baa6f5; /* Purple color */
+  margin: 0;
+  padding: 0;
 }
