@@ -5,13 +5,12 @@ const About = () => {
   return (
     <section className="about-me-section">
       <div className="about-me-container">
+        <h1 className="about-me-heading">About Me</h1>
+        <br />
         <div className="about-me-image">
           <img src="src/images/profile-pic.png" alt="About Me" />
         </div>
         <div className="about-me-text">
-          <h2>About Me</h2>
-          <br />
-          <br />
           <p>
             I am a skilled coder who creates innovative products using
             caffeine-powered code spells. <br /> <br />
@@ -27,6 +26,9 @@ const About = () => {
             Throughout all of this, my friends and family kept me grounded. They
             support me and keep me sane in the ever-changing world of tech.
           </p>
+          <a href="path/to/your/cv.pdf" class="download-button">
+            Download CV
+          </a>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #f0a1d6;
+  background-image: linear-gradient(#e3a2dd, #e6a2db, #eaa1d9, #eaa1d9);
   width: 100%;
   margin-top: 50px;
   padding: 3rem 2rem;
@@ -12,6 +12,12 @@ footer {
 
 footer a {
   color: #fff;
+  text-decoration: none;
+}
+.info div,
+.follow div {
+  display: inline-block; /* Display links inline */
+  margin-right: 10px; /* Add some spacing between links */
 }
 
 .footer-container {
@@ -43,6 +49,11 @@ footer a {
   flex-direction: column;
 }
 
+.footer-container .info a,
+.footer-container .follow a {
+  margin: 10px; /* Adjust spacing between links */
+}
+
 .footer-container .info h3,
 .footer-container .follow h3 {
   font-size: 1.1em;
@@ -53,6 +64,8 @@ footer a {
 .footer-container .info ul,
 .footer-container .follow ul {
   display: flex;
+  flex-wrap: wrap; /* Ensure the links wrap onto multiple lines if necessary */
+  justify-content: center;
 }
 
 .footer-container .info a {
@@ -70,85 +83,112 @@ footer a {
   margin-top: 50px;
 }
 
-.footer ul {
-  list-style-type: none; /* Remove the dots */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-}
+/*    Media query max-width 1070px    */
+@media screen and (max-width: 1070px) {
+  /*      Header navigation menu   */
 
-.footer ul li {
-  margin-bottom: 10px; /* Add some spacing between list items */
-}
+  .navigation {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .footer-container .info ul,
-  .footer-container .follow ul {
-    flex-direction: column; /* Stack links vertically */
-    align-items: flex-start; /* Align links to the left */
+  .navigation.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .nav-items {
+    position: relative;
+    background: #fff;
+    width: 600px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(0 0 0/10%);
+    transform: translateY(0);
+    transition: 0.3s ease;
+  }
+
+  .nav-items a {
+    margin: 15px 50px;
+  }
+
+  .nav-close-btn {
+    position: absolute;
+    background: url(images/close-btn.png) no-repeat;
+    filter: invert(1);
+    background-size: 12px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+    margin: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .nav-menu-btn {
+    background: url(images/menu-btn.png) no-repeat;
+    filter: invert(1);
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: block;
+  }
+
+  /*    FOOTER SECTION    */
+
+  footer .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-container .about,
+  .footer-container .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .footer-container .info ul {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-container .info ul li {
+    margin: 5px 0;
+  }
+  .footer-container .hr {
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0 22px;
   }
 }
 
-.footer ul {
-  list-style-type: none; /* Remove the dots */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-}
-
-.footer ul li {
-  margin-bottom: 10px; /* Add some spacing between list items */
-}
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .footer-container .info ul,
-  .footer-container .follow ul {
-    flex-direction: column; /* Stack links vertically */
-    align-items: flex-start; /* Align links to the left */
+@media screen and (max-width: 768px) {
+  .footer-container .info a,
+  .footer-container .follow a {
+    margin: 5px; /* Reduce spacing between links on smaller screens */
   }
 }
 
-.footer ul {
-  list-style-type: none; /* Remove the dots */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-}
-
-.footer ul li {
-  margin-bottom: 10px; /* Add some spacing between list items */
-}
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .footer-container .info ul,
-  .footer-container .follow ul {
-    flex-direction: column; /* Stack links vertically */
-    align-items: flex-start; /* Align links to the left */
-  }
-}
-
-.footer ul {
-  list-style-type: none; /* Remove the dots */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-}
-
-.footer ul li {
-  margin-bottom: 10px; /* Add some spacing between list items */
-}
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .footer-container .info ul,
-  .footer-container .follow ul {
-    flex-direction: column; /* Stack links vertically */
-    align-items: flex-start; /* Align links to the left */
-  }
-}
-
-.footer ul {
-  list-style-type: none; /* Remove the dots */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-}
-
-.footer ul li {
-  margin-bottom: 10px; /* Add some spacing between list items */
+@media screen and (max-width: 375px) {
 }

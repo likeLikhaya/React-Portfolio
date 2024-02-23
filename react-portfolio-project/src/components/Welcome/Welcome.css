@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh; /* Adjust based on your design needs */
-  background-image: url("path/to/your/background-image.jpg");
+  background-image: linear-gradient(#b8a6f5, #bfa5f1, #c3a5ef);
   background-size: cover;
   background-position: center;
   color: #050505;
