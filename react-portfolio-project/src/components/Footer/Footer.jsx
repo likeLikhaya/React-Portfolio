@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import linkedin from "../../images/linkedin.png";
+import github from "../../images/icons8-react.svg";
 
 const Footer = () => {
   return (
@@ -33,11 +35,11 @@ const Footer = () => {
               href="https://www.linkedin.com/in/likhaya-kalimashe-b86b69200/"
               target="_blank"
             >
-              <img src="src/images/linkedin.png" />
+              <img src={linkedin} />
             </a>
           </div>
           <div>
-            <a href="https://github.com/likeLikhaya" target="_blank">
+            <a href={github} target="_blank">
               <img src="src/images/github.png" />
             </a>
           </div>
