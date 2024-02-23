@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => {
+function Header() {
   return (
     <header>
       <div className="nav-bar">
@@ -13,17 +12,17 @@ const Navbar = () => {
           <div className="nav-items">
             <div className="nav-close-btn"></div>
             <a className="active" href="#home">
-              Meet Likhaya
+              Home
             </a>
-            <a href="#about">Talent Bank</a>
-            <a href="#skills">Creations</a>
-            <a href="#contact">Let's get in touch</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
         <div className="nav-menu-btn"></div>
       </div>
     </header>
   );
-};
+}
 
-export default Navbar;
+export default Header;
