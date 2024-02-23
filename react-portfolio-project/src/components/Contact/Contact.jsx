@@ -1,5 +1,5 @@
 import React from "react";
-import reCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 import "./Contact.css";
 
 const Contact = () => {
@@ -50,8 +50,13 @@ const Contact = () => {
           className="contact-inputs"
           required
         ></textarea>
-        <reCAPTCHA />
+        <ReCAPTCHA sitekey="6Ld0B30pAAAAAELA2Sq6sH9wRZBP-Q8QkdsQhoFX" />
         <button type="submit"> Send!</button>
+        <script
+          src="https://web3forms.com/client/script.js"
+          async
+          defer
+        ></script>
       </form>
     </div>
   );
