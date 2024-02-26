@@ -126,4 +126,9 @@ header.sticky .nav-bar {
     cursor: pointer;
     display: block;
   }
+
+  .nav-menu-btn.active {
+    background: url(src/images/close-btn.png) no-repeat;
+    /* Add other styles as needed */
+  }
 }

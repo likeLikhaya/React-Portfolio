@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import cv from "./cv.pdf";
 import profilePic from "../../images/profile-pic.png";
 
 const About = () => {
@@ -27,7 +28,11 @@ const About = () => {
             Throughout all of this, my friends and family kept me grounded. They
             support me and keep me sane in the ever-changing world of tech.
           </p>
-          <a href="path/to/your/cv.pdf" class="download-button">
+          <a
+            href={cv}
+            download="Likhaya Kalimashe's CV.pdf"
+            className="download-button"
+          >
             Download CV
           </a>
         </div>

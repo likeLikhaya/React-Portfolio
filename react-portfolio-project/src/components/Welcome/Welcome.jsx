@@ -4,7 +4,7 @@ import "./Welcome.css";
 const Welcome = () => {
   return (
     <>
-      <section className="landing-page">
+      <section className="landing-page" id="welcome">
         <div className="welcome-container">
           <div className="welcome-title">
             <div className="overlap-group">
