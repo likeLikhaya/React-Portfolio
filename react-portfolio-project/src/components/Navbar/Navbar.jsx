@@ -1,5 +1,15 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Skills from "../Skills/Skills";
 import "./Navbar.css";
+
+const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 function Navbar() {
   useEffect(() => {
@@ -71,10 +81,18 @@ function Navbar() {
             <a className="active" href="#home">
               Welcome
             </a>
-            <a href="#about">Meet Likhaya</a>
-            <a href="#skills">Talent Bank</a>
-            <a href="#contact">Creations</a>
-            <a href="#contact">Let's get in touch</a>
+            <Link to="/" onClick={() => scrollToSection("about")}>
+              Meet Likhaya
+            </Link>
+            <Link to="/" onClick={() => scrollToSection("skills")}>
+              Talent Bank
+            </Link>
+            <Link to="/" onClick={() => scrollToSection("MyPortfolio")}>
+              Creations
+            </Link>
+            <Link to="/" onClick={() => scrollToSection("contact")}>
+              Let's get in touch
+            </Link>
           </div>
         </div>
         <div className="nav-menu-btn"></div>

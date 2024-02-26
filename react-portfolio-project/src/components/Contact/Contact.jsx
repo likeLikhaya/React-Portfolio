@@ -4,7 +4,7 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <form
         action="https://api.web3forms.com/submit"
         method="POST"

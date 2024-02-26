@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 
 //simport About from "./components/About/About";
+
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Welcome from "./components/Welcome/Welcome";
@@ -20,6 +21,7 @@ function App() {
       <Slider />
       <Contact />
       <Footer />
+
       {/*  */}
     </>
   );

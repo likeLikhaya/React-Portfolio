@@ -8,7 +8,7 @@ import nodejs from "../../images/icons8-nodejs-32.svg";
 
 const Skills = () => {
   return (
-    <section className="Skills">
+    <section className="Skills" id="skills">
       <h1>Talent Bank</h1>
       <div className="container">
         <div className="skill-box">
