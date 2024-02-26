@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
-const Contact = () => {
+export const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_00ku9j4", "template_xuab666", form.current, {
+        publicKey: "FRhyKNtvM70NdMjaM",
+      })
+      .then(
+        () => {
+          alert("Email sent successfully!");
+        },
+        (error) => {
+          alert("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <div className="contact-container" id="contact">
-      <form
-        action="https://api.web3forms.com/submit"
-        method="POST"
-        className="contact-left"
-      >
+      <form ref={form} onSubmit={sendEmail} className="contact-left">
         <div className="contact-left-title">
           <h2>Have a project idea?</h2>
           <h2>Let's get in touch.</h2>
@@ -17,20 +33,15 @@ const Contact = () => {
         </div>
         <div className="input-group">
           <input
-            type="hidden"
-            name="access_key"
-            value="d4e43725-8577-4454-ba74-e3c87ebd6b8b"
-          />
-          <input
             type="text"
-            name="name"
+            name="user_name"
             placeholder="Name"
             className="contact-inputs"
             required
           />
           <input
             type="text"
-            name="surname"
+            name="user_surname"
             placeholder="Surname"
             className="contact-inputs"
             required
@@ -38,7 +49,7 @@ const Contact = () => {
         </div>
         <input
           type="email"
-          name="email"
+          name="user_email"
           placeholder="Email"
           className="contact-inputs"
           required
@@ -52,11 +63,6 @@ const Contact = () => {
         ></textarea>
         <ReCAPTCHA sitekey="6Ld0B30pAAAAAELA2Sq6sH9wRZBP-Q8QkdsQhoFX" />
         <button type="submit"> Send!</button>
-        <script
-          src="https://web3forms.com/client/script.js"
-          async
-          defer
-        ></script>
       </form>
     </div>
   );
