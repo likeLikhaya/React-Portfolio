@@ -1,12 +1,13 @@
 import React from "react";
 import "./About.css";
+import cv from "./cv.pdf";
 import profilePic from "../../images/profile-pic.png";
 
 const About = () => {
   return (
-    <section className="about-me-section">
+    <section className="about-me-section" id="about">
       <div className="about-me-container">
-        <h1 className="about-me-heading">About Me</h1>
+        <h1 className="about-me-heading">Meet Likhaya</h1>
         <br />
         <div className="about-me-image">
           <img src={profilePic} alt="About Me" />
@@ -27,7 +28,11 @@ const About = () => {
             Throughout all of this, my friends and family kept me grounded. They
             support me and keep me sane in the ever-changing world of tech.
           </p>
-          <a href="path/to/your/cv.pdf" class="download-button">
+          <a
+            href={cv}
+            download="Likhaya Kalimashe's CV.pdf"
+            className="download-button"
+          >
             Download CV
           </a>
         </div>

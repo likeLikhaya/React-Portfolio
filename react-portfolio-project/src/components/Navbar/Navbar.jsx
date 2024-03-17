@@ -2,6 +2,13 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom"; // Import NavLink
 import "./Navbar.css";
 
+const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 function Navbar() {
   useEffect(() => {
     const menuBtn = document.querySelector(".nav-menu-btn");
@@ -21,6 +28,9 @@ function Navbar() {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <header>
       <div className="nav-bar">
@@ -47,7 +57,7 @@ function Navbar() {
             </NavLink>
           </div>
         </div>
-        <div className="nav-menu-btn"></div>
+        <div className="nav-menu-btn" onClick={toggleMenu}></div>
       </div>
     </header>
   );

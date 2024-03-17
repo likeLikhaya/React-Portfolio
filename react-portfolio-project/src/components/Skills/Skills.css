@@ -1,12 +1,9 @@
-* {
+.Skills {
   padding: 0;
   margin: 0;
+  background-image: linear-gradient(#cfa4e8, #d1a3e7, #d8a3e3, #dba3e1);
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-}
-
-body {
-  background-image: linear-gradient(#cfa4e8, #d1a3e7, #d8a3e3);
 }
 
 .inner {
