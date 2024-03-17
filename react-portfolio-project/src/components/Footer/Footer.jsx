@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import linkedin from "../../images/linkedin.png";
-import github from "../../images/icons8-react.svg";
+import github from "../../images/github.png";
 
 const Footer = () => {
   return (
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
           <div>
             <a href={github} target="_blank">
-              <img src="src/images/github.png" />
+              <img src={github} />
             </a>
           </div>
         </div>

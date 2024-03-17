@@ -103,7 +103,7 @@ header.sticky .nav-bar {
 
   .nav-close-btn {
     position: absolute;
-    background: url(src/images/close-btn.png) no-repeat;
+    background: url("../../images/close-btn.png") no-repeat;
     filter: invert(1);
     background-size: 12px;
     background-position: center;
@@ -117,7 +117,7 @@ header.sticky .nav-bar {
   }
 
   .nav-menu-btn {
-    background: url(src/images/hamburger-menu.png) no-repeat;
+    background: url("../../images/hamburger-menu.png") no-repeat;
     filter: invert(1);
     background-size: 30px;
     background-position: center;

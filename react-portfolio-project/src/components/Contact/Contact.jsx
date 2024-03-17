@@ -50,7 +50,7 @@ const Contact = () => {
           className="contact-inputs"
           required
         ></textarea>
-        <ReCAPTCHA sitekey="6Ld0B30pAAAAAELA2Sq6sH9wRZBP-Q8QkdsQhoFX" />
+        <ReCAPTCHA sitekey="6LeyCn8pAAAAADbWcRseOkjd9QdbetMvbhjfzimx" />
         <button type="submit"> Send!</button>
         <script
           src="https://web3forms.com/client/script.js"
