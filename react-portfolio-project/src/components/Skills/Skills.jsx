@@ -30,7 +30,12 @@ const Skills = () => {
         <div className="skill-box">
           <div className="skills-title">
             <div className="img frontend">
-              <img src={js} alt="JavaScript Icon" className="skill-icon" />
+              <img
+                src={js}
+                alt="JavaScript Icon"
+                className="skill-icon"
+                data-tooltip="This is a tooltip text for the icon"
+              />
             </div>
             <h3>JavaScript</h3>
           </div>

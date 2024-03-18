@@ -35,8 +35,12 @@
 
 .about-me-text p {
   margin-bottom: 20px; /* Add bottom margin for paragraphs */
+  transition: color 0.3s ease;
 }
 
+/* .about-me-text p:hover {
+  color: #6a59d1;
+} */
 .download-button {
   background-color: #fff;
   color: #6a59d1;
